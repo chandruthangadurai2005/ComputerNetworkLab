@@ -1,0 +1,70 @@
+🧪 Lab Observation – Computer Networks
+🔹 Topic:
+Study of Display Filters and I/O Graphs in Wireshark using Analyze and Statistics menus.
+
+🎯 Aim:
+To study and understand the usage of the Analyze and Statistics menus in Wireshark, specifically focusing on applying display filters and generating I/O graphs to analyze network traffic.
+
+📖 Explanation:
+🔸 Analyze Menu – Display Filters:
+The Analyze menu in Wireshark is used to apply and manage display filters, which help in isolating specific packets of interest.
+
+These filters help focus on a specific protocol, IP address, port, or packet type.
+
+Examples:
+
+ip.addr == 192.168.1.1 – Shows packets involving this IP.
+
+tcp.port == 80 – Displays only HTTP traffic.
+
+http – Shows only HTTP packets.
+
+🔸 Statistics Menu – I/O Graph:
+The Statistics menu provides a variety of tools to analyze captured data visually.
+
+The I/O Graph option allows plotting of network traffic (in packets or bytes) over time.
+
+Users can create multiple graph lines based on filters, allowing comparison of different types of traffic.
+
+🛠️ Procedure:
+A. Display Filters (Analyze Menu):
+Open Wireshark and start capturing live traffic or load a saved .pcap file.
+
+Go to Analyze > Display Filters or use the filter bar on top.
+
+Apply various filters to isolate traffic:
+
+Enter http to display only HTTP traffic.
+
+Enter ip.addr == 192.168.0.105 to view packets to/from a specific IP.
+
+Observe how the packet list updates according to the applied filter.
+
+Note down the number of packets shown and verify their protocol.
+
+B. I/O Graph (Statistics Menu):
+With a capture loaded, go to Statistics > I/O Graph.
+
+By default, a graph of total traffic is shown.
+
+Add new graph lines:
+
+Line 1: Filter = http → to track HTTP traffic.
+
+Line 2: Filter = ip.addr == 192.168.0.105 → to track one host’s traffic.
+
+Set the Y-axis to “Packets/Tick” or “Bytes/Tick”.
+
+Adjust the time interval for better clarity (e.g., 1 sec or 10 sec).
+
+Observe and analyze traffic patterns in the graph.
+
+✅ Result:
+Successfully applied display filters to view specific traffic such as HTTP and IP-based packets.
+
+Generated and analyzed I/O graphs showing traffic variation over time.
+
+Understood how filtering and visual graphs help in traffic diagnosis and network analysis.
+
+🧾 Conclusion:
+Through this lab, we learned how to effectively use display filters to isolate relevant packets and how to visualize traffic using I/O graphs. These tools are essential for analyzing, troubleshooting, and optimizing network performance using Wireshark.
